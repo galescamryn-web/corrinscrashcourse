@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(103%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(133%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#14747b">
+<meta name="description" content="Corrin&apos;s LSAT Crash Course | deployed with HTMLaunch">
+<link rel="canonical" href="https://galescamryn-web.github.io/corrinscrashcourse/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Corrin&apos;s LSAT Crash Course">
+<meta property="og:title" content="Corrin&apos;s LSAT Crash Course">
+<meta property="og:description" content="Corrin&apos;s LSAT Crash Course | deployed with HTMLaunch">
+<meta property="og:url" content="https://galescamryn-web.github.io/corrinscrashcourse/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fgalescamryn-web.github.io%2Fcorrinscrashcourse%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Corrin&apos;s LSAT Crash Course">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Corrin&apos;s LSAT Crash Course">
+<meta name="twitter:description" content="Corrin&apos;s LSAT Crash Course | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fgalescamryn-web.github.io%2Fcorrinscrashcourse%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Corrin&apos;s LSAT Crash Course">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Corrin's LSAT Crash Course</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f2f7;--ink:#2b1d3a;--mut:#6d6278;--card:#fff;--line:#ddd2e4;--acc:#d6336c;--acc2:#1f8a7a;--hi:#ffe08a;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17111e;--ink:#f1e9f7;--mut:#a99bb8;--card:#221a2c;--line:#3a2f47;--acc:#ff6b9a;--acc2:#4fd1bd;--hi:#6b5410;--on:#17111e}}
+:root[data-theme="dark"]{--bg:#17111e;--ink:#f1e9f7;--mut:#a99bb8;--card:#221a2c;--line:#3a2f47;--acc:#ff6b9a;--acc2:#4fd1bd;--hi:#6b5410;--on:#17111e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Newsreader,Georgia,serif}
+h1,h2,h3,button,.num{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1;margin:.3em 0 .2em;font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.5rem;margin:1.2em 0 .4em}
+h3{font-size:1.05rem;margin:0}
+p{margin:.4em 0}
+.mut{color:var(--mut)}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0}
+nav button,.btn{font-weight:600;font-size:1rem;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:9px 16px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-block}
+nav button[aria-selected="true"],.btn.p{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.btn.s{background:var(--acc2);border-color:var(--acc2);color:var(--on)}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.stat .num{font-size:2rem;font-weight:800;line-height:1.1}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.today{background:var(--hi);color:#2b1d3a;border-radius:18px;padding:18px 20px;margin:18px 0}
+:root[data-theme="dark"] .today{color:#f1e9f7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .today{color:#f1e9f7}}
+.week{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:12px;padding:12px 14px;margin:10px 0}
+.week.t{box-shadow:0 0 0 2px var(--acc) inset}
+.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin-top:8px}
+.day{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:6px 4px;font-size:.78rem;line-height:1.2;cursor:pointer;min-height:64px;text-align:left}
+.day b{display:block;font-size:.95rem}
+.day.done{background:var(--acc2);color:var(--on);border-color:var(--acc2)}
+.day.now{outline:3px solid var(--acc)}
+.day.spec{border:2px dashed var(--acc)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px}
+td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top;font-size:.95rem}
+input[type=text],input[type=number],textarea{width:100%;font:inherit;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+dialog{border:none;border-radius:18px;padding:20px;max-width:560px;width:calc(100% - 24px);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(20,10,30,.55)}
+label{display:block;margin:10px 0 4px;font-weight:600}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.entry{border-bottom:1px solid var(--line);padding:10px 0}
+section[hidden]{display:none}
+@media (max-width:560px){.day{font-size:.66rem;padding:4px 2px;min-height:58px}}
+@media (prefers-reduced-motion:no-preference){.btn,nav button{transition:transform .12s}.btn:active,nav button:active{transform:scale(.97)}}
+#login{position:fixed;inset:0;background:var(--bg);display:grid;place-items:center;padding:20px;z-index:50;overflow:auto}
+#login[hidden]{display:none}
+#login .box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;max-width:380px;width:100%}
+.banner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--acc2);color:var(--on);border-radius:18px;padding:12px 14px;margin:6px 0}
+.banner .av{font-size:1.7rem;background:var(--on);border-radius:50%;width:50px;height:50px;display:grid;place-items:center;flex:none}
+.banner .msg{flex:1 1 200px;font:600 1.05rem/1.3 "Bricolage Grotesque",system-ui,sans-serif}
+.chip{background:rgba(255,255,255,.22);border-radius:999px;padding:4px 12px;font:700 .9rem "Bricolage Grotesque",system-ui,sans-serif}
+.bar{height:16px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--acc);border-radius:99px;transition:width .3s}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font:700 1rem "Bricolage Grotesque",sans-serif;z-index:60}
+#toast[hidden]{display:none}
+#tour{margin:auto auto calc(16px + env(safe-area-inset-bottom,0px)) auto}
+#tour::backdrop{background:rgba(20,10,30,.25)}
+.sm{padding:5px 12px;font-size:.85rem}
+#rain span{position:fixed;top:-2.5rem;font-size:1.7rem;animation:fall 2.6s linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){#rain{display:none}}
+.fc{background:var(--hi);color:#2b1d3a;border-radius:18px;padding:28px 20px;min-height:150px;display:grid;place-items:center;text-align:center;font:600 1.2rem/1.35 "Bricolage Grotesque",sans-serif;cursor:pointer;width:100%;border:0}
+.day.rest{background:var(--hi);color:#2b1d3a;border-color:var(--hi)}
+button.chip{border:2px solid var(--on);color:var(--on);cursor:pointer}
+select{font:inherit;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);max-width:100%}
+</style>
+</head>
+<body>
+<div id="login">
+<div class="box">
+<h1 style="font-size:2rem">Corrin's LSAT Crash Course</h1>
+<p class="mut">Sign in to open your course.</p>
+<label for="lUser">Username</label>
+<input type="text" id="lUser" autocomplete="username" autocapitalize="none">
+<label for="lPass">Password</label>
+<input type="password" id="lPass" autocomplete="current-password" style="width:100%;font:inherit;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)">
+<label class="row" style="font-weight:400"><input type="checkbox" id="lRem" checked> Keep me signed in on this device</label>
+<p id="lErr" style="color:var(--acc);font-weight:600" role="alert"></p>
+<button class="btn p" id="lGo">Sign in</button>
+</div></div>
+<div id="toast" hidden></div>
+<main id="app" hidden>
+<h1>Corrin's LSAT Crash Course</h1>
+<p class="mut">One hour a day, free resources only, test day Friday, February 12, 2027. <button class="btn sm" id="out">Sign out</button></p>
+<nav role="tablist" id="nav">
+<button role="tab" data-tab="home" aria-selected="true">Home</button>
+<button role="tab" data-tab="schedule" aria-selected="false">My schedule</button>
+<button role="tab" data-tab="lawhub" aria-selected="false">LawHub sections</button>
+<button role="tab" data-tab="log" aria-selected="false">What I studied</button>
+<button role="tab" data-tab="tools" aria-selected="false">Study tools</button>
+</nav>
+<div class="banner" id="banner"></div>
+
+<section id="home">
+<div class="cta">
+<button class="btn p" onclick="show('schedule')">Go to my schedule</button>
+<button class="btn s" onclick="show('lawhub')">Go to LawHub sections</button><button class="btn" id="tourBtn">Take the tour</button>
+</div>
+<div class="today" id="todayCard"></div>
+<div class="card" id="quick"><h3>Log my study time</h3>
+<div class="bar" style="margin:10px 0 4px"><i id="qFill"></i></div><div class="mut" id="qText"></div>
+<div class="row" style="margin-top:10px"><button class="btn p" onclick="addMins(15)">+15 min</button><button class="btn p" onclick="addMins(30)">+30 min</button><button class="btn p" onclick="addMins(60)">+60 min</button><input type="number" id="qCustom" min="1" max="600" placeholder="Other" aria-label="Other minutes" style="width:90px"><button class="btn" id="qAdd">Add</button><button class="btn" onclick="addMins(-15)">Undo 15</button><button class="btn restBtn" onclick="toggleRest()">Take a rest day</button></div>
+<div class="row" style="margin-top:12px"><b id="tmShow" class="num" style="font-size:1.6rem">0:00</b><button class="btn s" id="tmGo">Start timer</button><span class="mut">Stop it and the minutes get logged for you.</span></div>
+<label for="qNote">What did you work on today?</label>
+<textarea id="qNote" rows="2" placeholder="Example: Flaw questions, redid 5 I missed."></textarea></div>
+<div class="stats" id="stats"></div>
+<h2>The plan in four phases</h2>
+<div class="card"><b>Foundations (Oct 1 to Nov 4):</b> argument basics, formal logic, the main Logical Reasoning question types, and how to read a Reading Comprehension passage.</div>
+<div class="card"><b>Build (Nov 5 to Dec 9):</b> remaining question types, light timing, first LawHub test, and targeted repair of weak spots.</div>
+<div class="card"><b>Timed practice (Dec 10 to Jan 20):</b> pacing, hard questions, and full tests in one sitting.</div>
+<div class="card"><b>Peak and taper (Jan 21 to test day):</b> polish weak spots, final test, LSAT Writing, then rest.</div>
+<h2>Rules that keep the hour effective</h2>
+<div class="card">Try every question before watching an explanation. Log every miss and why. Protect Saturday (timed work) and Sunday (review). If you miss a day, just pick up the next one. Don't double up.</div>
+<p class="mut">Dates come from LSAC and can change, so confirm on lsac.org. The registration deadline LSAC listed is December 29, 2026.</p>
+</section>
+
+<section id="schedule" hidden>
+<h2>My schedule</h2>
+<p class="mut">Tap any day to see the task, the LawHub step, and to log what you worked on. Green means done. Dashed borders mark special dates.</p>
+<div id="weeks"></div>
+</section>
+
+<section id="lawhub" hidden>
+<h2>LawHub sections</h2>
+<div class="cta">
+<a class="btn p" href="https://lawhub.lsac.org" target="_blank" rel="noopener">Open LawHub</a>
+<a class="btn s" href="https://7sage.com/free-lsat-resources" target="_blank" rel="noopener">7Sage free resources</a>
+<a class="btn" href="https://www.lsac.org/lsatDates" target="_blank" rel="noopener">LSAT dates and deadlines</a>
+</div>
+<p class="mut">Menu names in LawHub may differ slightly from what's written here. Until you've finished your first LawHub test, use your 7Sage diagnostic as the "completed test" for redo work.</p>
+<h2>Which LawHub section for which day</h2>
+<div class="card scroll"><table id="lhTable"></table></div>
+<h2>Test tracker</h2>
+<p class="mut">The free tests are your most valuable material, so they're saved for the test weeks below. Tick one off and add your score when you finish.</p>
+<div id="tests"></div>
+</section>
+
+<section id="log" hidden>
+<h2>What I studied</h2>
+<div class="card"><h3>Weekly recap</h3><p class="mut">The last 7 days, ready to send.</p><pre id="recap" style="white-space:pre-wrap;font:inherit;margin:8px 0"></pre><div class="row"><button class="btn p" id="rShare">Send to Camryn</button><button class="btn" id="rCopy">Copy</button></div></div>
+<div class="row"><button class="btn" id="copyLog">Copy my full log</button><span class="mut" id="copyMsg"></span></div>
+<div id="entries"></div>
+</section>
+<section id="tools" hidden>
+<h2>Miss log</h2>
+<p class="mut">Log every question you miss and why. The pattern tells you what to fix first.</p>
+<div class="card">
+<label for="eSrc">Where was the question?</label><input type="text" id="eSrc" placeholder="Example: Test A, LR section 1, #17">
+<div class="row"><div><label for="eType">Question type</label><select id="eType"><option>Assumption</option><option>Strengthen</option><option>Weaken</option><option>Flaw</option><option>Inference</option><option>Main point</option><option>Method</option><option>Parallel</option><option>Principle</option><option>Resolve</option><option>Role</option><option>Point at issue</option><option>Reading comp</option></select></div>
+<div><label for="eCause">Why I missed it</label><select id="eCause"><option>Misread the question</option><option>Missed a quantifier</option><option>Concept gap</option><option>Fell for a trap</option><option>Rushed</option><option>Other</option></select></div></div>
+<label for="eFix">What I'll do differently</label><input type="text" id="eFix">
+<p><button class="btn p" id="eAdd">Add to miss log</button></p></div>
+<div id="errSum" class="mut"></div><div id="errList"></div>
+<h2>Flashcards</h2>
+<p class="mut">Tap the card to flip it.</p>
+<button class="fc" id="fcCard" aria-live="polite"></button>
+<div class="row" style="margin-top:10px"><button class="btn" id="fcPrev">Back</button><button class="btn p" id="fcNext">Next</button><button class="btn" id="fcShuf">Shuffle</button><span class="mut" id="fcPos"></span></div>
+</section>
+</main>
+<dialog id="party"><div id="rain" aria-hidden="true"></div><div style="text-align:center"><div style="font-size:3.5rem">🎉</div><h3 id="pTitle" style="font-size:1.5rem"></h3><p id="pText"></p><button class="btn p" id="pClose">Keep going</button></div></dialog>
+
+<dialog id="tour">
+<div class="mut" id="tCount"></div>
+<h3 id="tTitle" style="font-size:1.4rem;margin:4px 0"></h3>
+<p id="tText"></p>
+<div class="row" style="margin-top:12px"><button class="btn" id="tBack">Back</button><button class="btn p" id="tNext">Next</button><button class="btn" id="tSkip">Skip</button></div>
+</dialog>
+<dialog id="dlg">
+<h3 id="dTitle"></h3>
+<p id="dTask"></p>
+<p class="mut" id="dLH"></p>
+<label class="row" style="font-weight:600"><input type="checkbox" id="dDone"> I finished today's work</label>
+<label for="dMins">Minutes studied</label>
+<input type="number" id="dMins" min="0" max="600" step="5">
+<label for="dNote">What I studied or worked on</label>
+<textarea id="dNote" rows="4" placeholder="Example: Assumption questions, missed 3 because I confused necessary and sufficient."></textarea>
+<div class="row" style="margin-top:14px"><button class="btn p" id="dSave">Save</button><button class="btn" id="dRest">Rest day</button><button class="btn" id="dClose">Close</button></div>
+</dialog>
+
+<script>
+const KEY='corrin-lsat-v1';
+let S={days:{},tests:{}};
+try{S=Object.assign(S,JSON.parse(localStorage.getItem(KEY)||'{}'))}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+const $=s=>document.querySelector(s);
+const pad=n=>String(n).padStart(2,'0');
+const ymd=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const fmt=d=>d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+const START=new Date(2026,9,1),TEST=new Date(2027,1,12);
+const DAYS=[
+{n:'Sun',t:'Review',d:"Go over Saturday's work, update the error log, plan the week.",lh:"Open the results and review screen for Saturday's section or test."},
+{n:'Mon',t:'Learn',d:"One new concept (free lesson, cheat sheet, or live class) plus a few practice questions.",lh:"7Sage first. No LawHub needed today."},
+{n:'Tue',t:'LR drill',d:"Untimed Logical Reasoning on this week's question type. Write your reasoning before checking.",lh:"In a completed test, open a Logical Reasoning section and redo the question type you're drilling."},
+{n:'Wed',t:'Reading comp',d:"One passage. Write a one-line summary of each paragraph before answering.",lh:"In a completed test, open one Reading Comprehension passage."},
+{n:'Thu',t:'Mixed LR',d:"Mixed Logical Reasoning plus error log entries for every miss.",lh:"Open your last test's review screen and redo missed LR questions."},
+{n:'Fri',t:'Flashcards',d:"10 minutes of flashcards (conditionals and common flaws), then redo old missed questions.",lh:"Open the flagged or missed questions from earlier tests and redo them."},
+{n:'Sat',t:'Timed section',d:"One timed 35-minute section, then blind review (redo flagged questions before checking answers).",lh:"Pick one section (rotate LR, RC, LR) from a test you've already completed and time it."}
+];
+const WEEKS=['Diagnostic and setup','Argument basics','Formal logic','Assumption, Strengthen, Weaken','Flaw, Inference, Main Point','Remaining LR types, light timing','Test A and review','Repair weak types','Light week (Thanksgiving)','Mixed timed sections and Writing practice','Test B and review','Repair and pacing','Light week (holidays)','Hard-question work','Test C and review','Repair top three error causes','Weak-spot polish','Test D and review','Taper and LSAT Writing','Test week'];
+const PH=['#d6336c','#1f8a7a','#c98a00','#6a4bd6'];
+const phase=w=>w<5?0:w<10?1:w<16?2:3;
+const TESTS={'2026-10-03':'Diagnostic: 7Sage free full test','2026-11-14':'Test A: LawHub free test','2026-12-12':'Test B: LawHub free test','2027-01-09':'Test C: LawHub free test','2027-01-30':'Test D: LawHub free test'};
+const SPEC={
+'2026-11-26':{t:'Light day',d:'Thanksgiving. Do flashcards only, or rest.',lh:'No LawHub today.'},
+'2026-12-29':{t:'Register today',d:'LSAC lists December 29 as the registration deadline. Register before you study.',lh:'Register at lsac.org, then do a normal day.',x:1},
+'2027-02-04':{t:'LSAT Writing',d:'LSAT Argumentative Writing becomes available. Complete it before test day, then do light review.',lh:'Done on LSAC, not LawHub. Check lsac.org for the exact steps.',x:1},
+'2027-02-11':{t:'Rest',d:'Day before the test. Check ID and setup, eat well, sleep early.',lh:'No LawHub today.',x:1},
+'2027-02-12':{t:'TEST DAY',d:'Friday, February 12. You have done the work. Eat, arrive early or set up early, and stay calm between sections.',lh:'',x:1},
+'2027-02-13':{t:'Test window',d:"Saturday, February 13 is the other primary test date. Skip if you tested yesterday.",lh:'',x:1}
+};
+function plan(d){
+const k=ymd(d);
+if(TESTS[k])return{t:'Full test',d:TESTS[k]+'. Take it in one sitting if you can, then do a full blind review over the next two days.',lh:k==='2026-10-03'?'Take the 7Sage free test (or the matching LSAC test).':'In LawHub, open the next free PrepTest and take all sections timed.',x:1};
+if(SPEC[k])return SPEC[k];
+const b=DAYS[d.getDay()];return{t:b.t,d:b.d,lh:b.lh};
+}
+const dayIdx=d=>Math.round((d-START)/864e5);
+function clamp(d){const e=new Date(2027,1,13);return d<START?START:d>e?e:d}
+function show(t){
+['home','schedule','lawhub','log','tools'].forEach(s=>{$('#'+s).hidden=s!==t});
+document.querySelectorAll('#nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===t));
+if(t==='log')renderLog();if(t==='home')renderHome();
+window.scrollTo(0,0);
+}
+document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>show(b.dataset.tab));
+
+let cur=null;
+function openDay(d){
+cur=d;const k=ymd(d),p=plan(d),r=S.days[k]||{};
+$('#dTitle').textContent=d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+$('#dTask').innerHTML='<b>'+p.t+':</b> '+p.d;
+$('#dLH').textContent=p.lh?'LawHub step: '+p.lh:'';
+$('#dDone').checked=!!r.done;$('#dMins').value=r.mins==null?'':r.mins;$('#dNote').value=r.note||'';
+$('#dRest').textContent=r.rest?'Undo rest day':'Make this a rest day';
+$('#dlg').showModal();
+}
+$('#dClose').onclick=()=>$('#dlg').close();
+$('#dSave').onclick=()=>{
+const k=ymd(cur);
+S.days[k]={done:$('#dDone').checked,mins:parseInt($('#dMins').value)||0,note:$('#dNote').value.trim(),rest:!!(S.days[k]||{}).rest&&!$('#dDone').checked&&!(parseInt($('#dMins').value)>0)};
+save();$('#dlg').close();renderAll();checkMile();
+};
+
+function renderWeeks(){
+const el=$('#weeks');el.innerHTML='';
+const now=ymd(new Date());
+for(let w=0;w<20;w++){
+const ws=new Date(START);ws.setDate(ws.getDate()+w*7);
+const we=new Date(ws);we.setDate(we.getDate()+6);
+const last=new Date(2027,1,13);
+const box=document.createElement('div');
+box.className='week'+(WEEKS[w].indexOf('Test')===0&&w<19?' t':'');
+box.style.setProperty('--c',PH[phase(w)]);
+box.innerHTML='<h3>Week '+(w+1)+': '+WEEKS[w]+'</h3><div class="mut">'+fmt(ws)+' to '+fmt(we>last?last:we)+'</div>';
+const g=document.createElement('div');g.className='days';
+for(let i=0;i<7;i++){
+const d=new Date(ws);d.setDate(d.getDate()+i);if(d>last)break;
+const k=ymd(d),p=plan(d),b=document.createElement('button');
+b.className='day'+(S.days[k]&&S.days[k].done?' done':'')+(S.days[k]&&S.days[k].rest?' rest':'')+(k===now?' now':'')+((p.x||TESTS[k])?' spec':'');
+b.innerHTML='<b>'+DAYS[d.getDay()].n+' '+d.getDate()+'</b>'+(S.days[k]&&S.days[k].rest?'Rest day':p.t);
+b.onclick=()=>openDay(d);g.appendChild(b);
+}
+box.appendChild(g);el.appendChild(box);
+}
+}
+
+function renderHome(){
+const d=clamp(new Date()),p=plan(d);
+const left=Math.ceil((TEST-new Date(new Date().setHours(0,0,0,0)))/864e5);
+$('#todayCard').innerHTML='<h3>'+(new Date()<START?'First day: ':'Today: ')+d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})+'</h3><p><b>'+p.t+'.</b> '+p.d+'</p><button class="btn p" id="logToday">Log today</button>';
+$('#logToday').onclick=()=>openDay(d);
+const ds=Object.keys(S.days).filter(k=>S.days[k].done);
+const hrs=Object.values(S.days).reduce((a,r)=>a+(r.mins||0),0)/60;
+let streak=0,c=new Date();c.setHours(0,0,0,0);
+if(!(S.days[ymd(c)]||{}).done)c.setDate(c.getDate()-1);
+while((S.days[ymd(c)]||{}).done){streak++;c.setDate(c.getDate()-1)}
+$('#stats').innerHTML=[[left>0?left:0,'days to test'],[ds.length,'days finished'],[hrs.toFixed(1),'hours logged'],[streakCount(),'day streak']].map(a=>'<div class="stat"><div class="num">'+a[0]+'</div>'+a[1]+'</div>').join('');
+}
+
+function renderLH(){
+$('#lhTable').innerHTML='<tr><th>Day</th><th>Task</th><th>In LawHub</th></tr>'+[1,2,3,4,5,6,0].map(i=>'<tr><td>'+DAYS[i].n+'</td><td>'+DAYS[i].t+'</td><td>'+DAYS[i].lh+'</td></tr>').join('')+'<tr><td>Test weeks</td><td>Full test</td><td>Open the next free PrepTest and take every section timed, in one sitting.</td></tr>';
+const el=$('#tests');el.innerHTML='';
+Object.keys(TESTS).forEach(k=>{
+const t=S.tests[k]||{},c=document.createElement('div');c.className='card row';
+const [y,m,dd]=k.split('-').map(Number);
+c.innerHTML='<label class="row" style="margin:0;flex:1 1 260px"><input type="checkbox" '+(t.done?'checked':'')+'> '+TESTS[k]+' ('+fmt(new Date(y,m-1,dd))+')</label><input type="text" placeholder="Score (optional)" value="'+(t.score||'').replace(/"/g,'')+'" style="flex:0 1 160px">';
+const [cb,sc]=c.querySelectorAll('input');
+const upd=()=>{S.tests[k]={done:cb.checked,score:sc.value.trim()};save();checkMile()};
+cb.onchange=upd;sc.onchange=upd;el.appendChild(c);
+});
+}
+
+function logText(){
+return Object.keys(S.days).sort().filter(k=>S.days[k].done||S.days[k].note).map(k=>{
+const r=S.days[k],[y,m,dd]=k.split('-').map(Number);
+return fmt(new Date(y,m-1,dd))+' ('+plan(new Date(y,m-1,dd)).t+', '+(r.mins||0)+' min'+(r.done?'':', not finished')+'): '+(r.note||'no notes');
+}).join('\n');
+}
+function renderLog(){
+const el=$('#entries'),ks=Object.keys(S.days).sort().reverse().filter(k=>S.days[k].done||S.days[k].note);
+if(!ks.length){el.innerHTML='<p class="mut">Nothing yet. Open a day in your schedule, add what you studied, and it will show up here.</p>';return}
+el.innerHTML='';
+ks.forEach(k=>{
+const r=S.days[k],[y,m,dd]=k.split('-').map(Number),d=new Date(y,m-1,dd),e=document.createElement('div');
+e.className='entry';
+const h=document.createElement('b');h.textContent=d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})+' · '+plan(d).t+' · '+(r.mins||0)+' min'+(r.done?'':' · not finished');
+const p=document.createElement('p');p.textContent=r.note||'No notes.';
+e.appendChild(h);e.appendChild(p);e.style.cursor='pointer';e.onclick=()=>openDay(d);el.appendChild(e);
+});
+}
+$('#copyLog').onclick=async()=>{
+const t=logText()||'No entries yet.';
+try{await navigator.clipboard.writeText(t);$('#copyMsg').textContent='Copied.'}
+catch(e){$('#copyMsg').textContent='Copy blocked. Select and copy the entries below instead.'}
+};
+function renderAll(){renderWeeks();renderHome();renderLog();renderBanner();renderQuick();renderErrs();renderRecap()}
+const todayKey=()=>ymd(new Date());
+function toast(t){const e=$('#toast');e.textContent=t;e.hidden=false;clearTimeout(toast.h);toast.h=setTimeout(()=>e.hidden=true,2200)}
+function addMins(n){
+const k=todayKey(),r=S.days[k]||{done:false,mins:0,note:''};
+r.mins=Math.max(0,(r.mins||0)+n);r.done=r.mins>=60;if(r.mins>0)r.rest=false;S.days[k]=r;save();
+toast(n>0?"+"+n+" XP! Nice work.":"Time removed.");renderAll();if(n>0)checkMile();
+}
+$('#qAdd').onclick=()=>{const v=parseInt($('#qCustom').value);if(v>0){addMins(v);$('#qCustom').value=''}};
+$('#qNote').onchange=()=>{const k=todayKey(),r=S.days[k]||{done:false,mins:0,note:''};r.note=$('#qNote').value.trim();S.days[k]=r;save();renderLog();toast("Note saved.")};
+function renderQuick(){
+const r=S.days[todayKey()]||{},m=r.mins||0;
+$('#qFill').style.width=Math.min(100,Math.round(m/60*100))+'%';
+$('#qText').textContent=r.rest?"Rest day · streak protected":m+" of 60 minutes today"+(m>=60?" · goal reached!":"");document.querySelectorAll('.restBtn').forEach(b=>b.textContent=r.rest?'Undo rest day':'Take a rest day');
+if(document.activeElement!==$('#qNote'))$('#qNote').value=r.note||'';
+}
+function streakCount(){let s=0,c=new Date();c.setHours(0,0,0,0);const g=()=>S.days[ymd(c)]||{};if(!g().done&&!g().rest)c.setDate(c.getDate()-1);while(g().done||g().rest){if(g().done)s++;c.setDate(c.getDate()-1)}return s}
+const POOL=["Small steps, big score. One hour is all today asks.","You're building a skill, not cramming. Keep showing up.","Every question you review now is one less surprise on test day.","Future law student energy. Open today's task!","Consistency beats intensity. You've got this, Corrin."];
+function renderBanner(){
+const rest=!!(S.days[todayKey()]||{}).rest,m=(S.days[todayKey()]||{}).mins||0,st=streakCount(),xp=Object.values(S.days).reduce((a,r)=>a+(r.mins||0),0);
+const left=Math.max(0,Math.ceil((TEST-new Date(new Date().setHours(0,0,0,0)))/864e5));
+let msg;
+if(rest)msg="Rest day. Recovery counts too, and your streak is safe.";
+else if(m>=60)msg="Daily goal complete! That's how scores go up. See you tomorrow.";
+else if(m>0)msg=(60-m)+" more minutes to hit today's goal. You're already on the board!";
+else if(st>=7)msg=st+" days in a row! Don't break the streak today.";
+else if(st>=2)msg=st+"-day streak! Keep it going with today's hour.";
+else msg=POOL[new Date().getDate()%POOL.length];
+$('#banner').innerHTML='<div class="av">⭐</div><div class="msg">'+msg+'</div><button class="chip" onclick="toggleRest()">'+(rest?'Undo rest day':'Rest day')+'</button><div class="chip">🔥 '+st+'</div><div class="chip">⚡ '+xp+' XP</div><div class="chip">'+left+' days left</div>';
+}
+const TOUR=[
+{tab:'home',t:"Hey Corrin, Camryn has built you a crash course!",d:"Let's take a look around."},
+{tab:'home',t:"Home",d:"The yellow card is today's task. Under it, tap +15, +30 or +60 after you study to log your time, and jot what you worked on. The banner up top tracks your streak and XP. One XP is one minute. Need a day off? Tap Rest day in the banner and your streak stays safe."},
+{tab:'schedule',t:"My schedule",d:"Every day until test day. Tap a day to see the task and what to open in LawHub, then log what you did. Green days are finished."},
+{tab:'lawhub',t:"LawHub sections",d:"Buttons to open LawHub, plus a table showing which section to use on which day. The tracker is for your five full tests. Tick one and add your score."},
+{tab:'log',t:"What I studied",d:"Everything you write shows up here. At the top is your weekly recap. Tap Send to Camryn to text or share it."},
+{tab:'tools',t:"Study tools",d:"The miss log is where you record every question you get wrong and why, and it shows your top cause. Below it are flashcards for logic rules and common flaws."},
+{tab:'home',t:"You're all set",d:"One hour a day, and you've got this. You can replay this tour anytime with Take the tour."}
+];
+let ti=0;
+function tourStep(){const s=TOUR[ti];show(s.tab);$('#tTitle').textContent=s.t;$('#tText').textContent=s.d;$('#tCount').textContent=(ti+1)+" of "+TOUR.length;$('#tBack').style.visibility=ti?'visible':'hidden';$('#tNext').textContent=ti===TOUR.length-1?"Start studying":"Next"}
+function startTour(){ti=0;$('#tour').showModal();tourStep()}
+function endTour(){$('#tour').close();S.toured=true;save();show('home')}
+$('#tNext').onclick=()=>{if(ti<TOUR.length-1){ti++;tourStep()}else endTour()};
+$('#tBack').onclick=()=>{if(ti>0){ti--;tourStep()}};
+$('#tSkip').onclick=endTour;
+$('#tour').addEventListener('cancel',()=>{S.toured=true;save()});
+$('#tourBtn').onclick=startTour;
+const AUTH='corrin-lsat-auth',HASH='456e46587e8e4b7b8435d4c8622d042a4f255a660f064de1bdf8ee358296b6ea';
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+function enter(){$('#login').hidden=true;$('#app').hidden=false;renderAll();if(!S.toured)startTour()}
+async function tryLogin(){
+const u=$('#lUser').value.trim().toLowerCase(),p=$('#lPass').value;
+try{
+if(await sha(u+":"+p)===HASH){if($('#lRem').checked){try{localStorage.setItem(AUTH,"1")}catch(e){}}$('#lErr').textContent='';enter()}
+else $('#lErr').textContent="That username or password doesn't match. Try again.";
+}catch(e){$('#lErr').textContent="Sign-in needs a secure page. Open the link in your browser."}
+}
+$('#lGo').onclick=tryLogin;
+[$('#lUser'),$('#lPass')].forEach(el=>el.addEventListener('keydown',e=>{if(e.key==='Enter')tryLogin()}));
+$('#out').onclick=()=>{try{localStorage.removeItem(AUTH)}catch(e){}location.reload()};
+S.errs=S.errs||[];S.mile=S.mile||[];
+const MS=[
+{id:'s3',f:c=>c.st>=3,t:"3-day streak!",d:"Three days in a row. A habit is forming."},
+{id:'s7',f:c=>c.st>=7,t:"7-day streak!",d:"A full week of showing up. That's real discipline."},
+{id:'s14',f:c=>c.st>=14,t:"14-day streak!",d:"Two weeks straight. Most people quit before this."},
+{id:'s30',f:c=>c.st>=30,t:"30-day streak!",d:"A whole month of study. Unstoppable."},
+{id:'h10',f:c=>c.h>=10,t:"10 hours logged!",d:"Ten real hours of LSAT work are in the bank."},
+{id:'h25',f:c=>c.h>=25,t:"25 hours logged!",d:"That's a serious chunk of the plan. Keep stacking it."},
+{id:'h50',f:c=>c.h>=50,t:"50 hours logged!",d:"Halfway to 100. Your reasoning is sharper than when you started."},
+{id:'h100',f:c=>c.h>=100,t:"100 hours logged!",d:"Triple digits. You've put in the work."},
+{id:'t1',f:c=>c.t>=1,t:"First full test done!",d:"Now the real improvement starts: review it carefully."},
+{id:'t5',f:c=>c.t>=5,t:"All five tests done!",d:"Every test in the plan is finished. Finish strong."}];
+function checkMile(){
+const c={st:streakCount(),h:Object.values(S.days).reduce((a,r)=>a+(r.mins||0),0)/60,t:Object.values(S.tests).filter(x=>x.done).length};
+const nu=MS.filter(m=>m.f(c)&&!S.mile.includes(m.id));if(!nu.length)return;
+nu.forEach(m=>S.mile.push(m.id));save();
+const m=nu[nu.length-1];$('#pTitle').textContent=m.t;$('#pText').textContent=m.d;
+const r=$('#rain');r.innerHTML='';const em=['🎉','⭐','🔥','✨','💜'];
+for(let i=0;i<28;i++){const e=document.createElement('span');e.textContent=em[i%5];e.style.left=(Math.random()*95)+'vw';e.style.animationDelay=(Math.random()*1.2)+'s';r.appendChild(e)}
+if(!$('#party').open)$('#party').showModal();
+}
+$('#pClose').onclick=()=>{$('#party').close();$('#rain').innerHTML=''};
+let tStart=null,tInt=null;
+function tick(){const t=Math.floor((Date.now()-tStart)/1000);$('#tmShow').textContent=Math.floor(t/60)+':'+pad(t%60)}
+$('#tmGo').onclick=()=>{
+if(tStart==null){tStart=Date.now();tInt=setInterval(tick,1000);$('#tmGo').textContent='Stop and log'}
+else{const m=Math.round((Date.now()-tStart)/60000);clearInterval(tInt);tStart=null;$('#tmGo').textContent='Start timer';$('#tmShow').textContent='0:00';if(m>0)addMins(m);else toast("Under a minute, so nothing was logged.")}
+};
+function recapText(){
+const e=new Date();e.setHours(0,0,0,0);const days=[];
+for(let i=6;i>=0;i--){const d=new Date(e);d.setDate(d.getDate()-i);days.push(d)}
+let tot=0,dn=0,rd=0;const lines=[];
+days.forEach(d=>{const r=S.days[ymd(d)]||{};tot+=r.mins||0;if(r.done)dn++;if(r.rest)rd++;if(r.mins||r.note)lines.push(fmt(d)+": "+(r.mins||0)+" min"+(r.note?" - "+r.note:""))});
+const from=ymd(days[0]);
+const errs=S.errs.filter(x=>x.date>=from);
+const tests=Object.keys(S.tests).filter(k=>S.tests[k].done&&k>=from).map(k=>TESTS[k].split(':')[0]+(S.tests[k].score?" ("+S.tests[k].score+")":""));
+let t="Corrin's LSAT recap, "+fmt(days[0])+" to "+fmt(days[6])+"\n";
+t+="Days finished: "+dn+"/7 | Time: "+(tot/60).toFixed(1)+" hrs | Streak: "+streakCount()+(rd?" | Rest days: "+rd:"")+"\n";
+if(tests.length)t+="Tests: "+tests.join(", ")+"\n";
+if(errs.length)t+="Misses logged: "+errs.length+"\n";
+return t+(lines.length?lines.join("\n"):"No entries yet.");
+}
+function renderRecap(){$('#recap').textContent=recapText()}
+$('#rShare').onclick=async()=>{
+const t=recapText();
+try{if(navigator.share){await navigator.share({text:t});return}}catch(e){if(e&&e.name==='AbortError')return}
+try{await navigator.clipboard.writeText(t);toast("Recap copied. Paste it into a message to Camryn.")}catch(e){toast("Select the recap text and copy it.")}
+};
+$('#rCopy').onclick=async()=>{try{await navigator.clipboard.writeText(recapText());toast("Recap copied.")}catch(e){toast("Select the recap text and copy it.")}};
+$('#eAdd').onclick=()=>{
+const src=$('#eSrc').value.trim();if(!src){toast("Add where the question came from.");return}
+S.errs.push({id:Date.now(),date:todayKey(),src:src,type:$('#eType').value,cause:$('#eCause').value,fix:$('#eFix').value.trim()});
+save();$('#eSrc').value='';$('#eFix').value='';renderAll();toast("Miss logged.");
+};
+function renderErrs(){
+const el=$('#errList');el.innerHTML='';
+const cnt={};S.errs.forEach(x=>cnt[x.cause]=(cnt[x.cause]||0)+1);
+const top=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);
+$('#errSum').textContent=top.length?"Most common cause: "+top[0]+" ("+cnt[top[0]]+" of "+S.errs.length+"). "+top.slice(1,3).map(c=>c+" ("+cnt[c]+")").join(", "):"No misses logged yet.";
+S.errs.slice().reverse().forEach(x=>{
+const d=document.createElement('div');d.className='entry';
+const b=document.createElement('b');b.textContent=x.src+" · "+x.type;
+const p=document.createElement('p');p.textContent=x.cause+(x.fix?". Next time: "+x.fix:"");
+const del=document.createElement('button');del.className='btn sm';del.textContent='Delete';
+del.onclick=()=>{S.errs=S.errs.filter(y=>y.id!==x.id);save();renderAll()};
+d.appendChild(b);d.appendChild(p);d.appendChild(del);el.appendChild(d);
+});
+}
+const DECK=[
+["All A are B","A → B. Contrapositive: not B → not A."],
+["A only if B","A → B. B is necessary for A."],
+["A unless B","If not B, then A. (not B → A)"],
+["Some A are B","At least one A is B. It could be all."],
+["Most A are B","More than half of A are B."],
+["If A → B, what is NOT valid?","The converse (B → A) and the inverse (not A → not B)."],
+["Necessary assumption test","Negate the answer. If the argument falls apart, it's necessary."],
+["How to weaken","Offer an alternative explanation, a counterexample, or attack the assumption."],
+["Inference questions","Stay strictly inside the text. The right answer is often boring."],
+["Flaw: correlation vs causation","Assumes A causes B because they occur together. Could be reverse causation, a third factor, or coincidence."],
+["Flaw: necessary vs sufficient","Treats \"if A then B\" as if it meant \"if B then A\"."],
+["Flaw: unrepresentative sample","Generalizes from a biased or too-small group."],
+["Flaw: equivocation","A key word changes meaning partway through the argument."],
+["Flaw: part vs whole","Assumes what's true of the parts is true of the whole, or the reverse."],
+["Flaw: false dichotomy","Presents two options as the only ones."],
+["Flaw: ad hominem","Attacks the person instead of the claim."]];
+let fi=0,fb=false;
+function renderFc(){const c=DECK[fi];$('#fcCard').textContent=fb?c[1]:c[0];$('#fcPos').textContent=(fi+1)+" of "+DECK.length+(fb?" · answer":" · question")}
+$('#fcCard').onclick=()=>{fb=!fb;renderFc()};
+$('#fcNext').onclick=()=>{fi=(fi+1)%DECK.length;fb=false;renderFc()};
+$('#fcPrev').onclick=()=>{fi=(fi+DECK.length-1)%DECK.length;fb=false;renderFc()};
+$('#fcShuf').onclick=()=>{for(let i=DECK.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[DECK[i],DECK[j]]=[DECK[j],DECK[i]]}fi=0;fb=false;renderFc()};
+renderFc();
+function setRest(k,v){
+const r=S.days[k]||{done:false,mins:0,note:''};
+if(v&&(r.done||r.mins>=60)){toast("You already finished that day. No rest needed.");return}
+r.rest=v;S.days[k]=r;save();renderAll();toast(v?"Rest day set. Your streak is safe.":"Rest day removed.");
+}
+function toggleRest(){const k=todayKey();setRest(k,!(S.days[k]||{}).rest)}
+$('#dRest').onclick=()=>{const k=ymd(cur);setRest(k,!(S.days[k]||{}).rest);$('#dlg').close()};
+renderLH();renderAll();
+try{if(localStorage.getItem(AUTH)==="1")enter()}catch(e){}
+</script>
+</body>
+</html>
